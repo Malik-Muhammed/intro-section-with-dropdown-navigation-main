@@ -1,0 +1,324 @@
+*,*::before, *::after{
+margin: 0;
+padding: 0;
+}
+
+a{
+text-decoration: none;
+color:hsl(0, 0%, 41%);
+cursor: pointer;
+}
+
+ul{
+list-style-type: none;
+}
+
+body{
+font-family: 'Epilogue', sans-serif;
+background-color: hsl(0, 0%, 98%);
+height: 100vh;
+}
+
+
+.container{
+max-width: 90vw;
+margin: 0.8rem auto 0;
+padding: 8px 3%;
+}
+
+
+nav .container{
+display: flex;
+justify-content: space-between;
+}
+
+
+
+.middle-nav-items{
+position: fixed;
+top: -100%;
+right:0;
+height: 0;
+overflow: hidden;
+width: 64%;
+background-color: white;
+transition: .3s ease-in-out all;
+} 
+
+
+.hamburger-container{
+position: fixed;
+left: calc(100vw - 70px);
+}
+.middle-nav-items.showNav{
+top: 0;
+height: 100vh;
+transition: .3s ease-in-out all; 
+}
+
+
+.left-nav-items{
+margin-top: 70px;
+margin-left: 1.3rem;
+}
+
+#hamburger-icon{
+position: relative;
+z-index: 1000;
+cursor: pointer;
+}
+
+
+.dropdownContent{
+max-height: 0;
+overflow: hidden;
+}
+
+.dropdownContent>li:not(:last-child){
+margin-bottom: .85rem;
+}
+
+
+
+.dropdownButton img{
+padding-left: 12px;
+}
+
+.features-dropdown>li img{
+padding-right: 15px;
+vertical-align: middle;
+}
+
+.left-nav-items>li:nth-child(n+3):nth-child(-n+4){
+margin-bottom: .85rem;
+}
+
+.right-nav-items{
+margin-top: 1.8rem;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: .75rem;
+}
+
+
+
+
+.right-nav-items>li:nth-child(2){
+border: 2px solid hsl(0, 0%, 41%);
+border-radius: 14px;
+padding: 11px 30px;
+}
+
+
+
+.dropdownContainer{
+margin-bottom: .75rem;
+cursor: pointer;
+color:hsl(0, 0%, 41%);
+}
+
+.show{
+max-height: max-content;
+padding: .95rem;
+transition: all 1s ease-in-out;
+}
+
+
+.icon.open{
+transform: rotate(-180deg);
+transition: transform 0.6s;
+padding-right: 12px;
+}
+
+.icon.close{
+transform: rotate(0deg);
+transition: transform 0.6s;
+}
+
+.more-btn{
+background-color: hsl(0, 0%, 8%);
+border-radius: 14px;
+color:#fff;
+padding: 19px 39px;
+text-align: center;
+display: inline-block;
+font-size: 14px;
+font-weight: 700;
+margin-top: 2.4em;
+}
+
+.hero-section{
+display: flex;
+flex-direction: column-reverse;
+}
+
+.hero-section img{
+max-width: 100%;
+display: block;
+}
+
+
+.hero-text{
+margin-top: 2.2rem;
+text-align: center;
+padding: 1.3rem;
+}
+
+
+
+.hero-text p{
+margin: 1.7rem 0;
+line-height: 1.5;
+color:  hsl(0, 0%, 41%);
+}
+
+.client-section{
+display: flex;
+justify-content: space-around;
+gap: 1.4rem;
+padding-bottom: 2.5rem;
+margin-top: 2.5rem;
+}
+
+.client-section img{
+width: 50px;
+}
+
+
+
+@media(min-width:991px) {
+
+  .middle-nav-items.showNav{
+  height: max-content;
+  }
+
+  .hamburger-container,
+  #hamburger-icon{
+  display: none;
+  }
+
+  nav .container {
+  gap: 4.3rem;
+  }
+
+  .middle-nav-items{
+  position: relative;
+  top: 0;
+  width: auto;
+  height: auto;
+  display: flex;
+  flex-grow: 1;
+  justify-content: space-between;
+  background-color: transparent;
+  }
+
+  .left-nav-items,
+  .right-nav-items{
+  margin:0;
+  max-height: max-content;
+  position: relative;
+  overflow:visible;
+  }
+
+  .logo{
+  margin-top: 15px;
+  }
+
+  .left-nav-items{
+  display: flex;
+  gap: 2rem;
+  margin-top: 15px;
+  }
+
+
+
+  .right-nav-items{
+  flex-direction: row;
+  gap: 2rem;
+  }
+
+
+
+  .right-nav-items li:first-child{
+  margin-top: 4px;
+  }
+
+  .dropdownContainer{
+  position: relative;
+  z-index: 1000;
+
+  }
+
+  .middle-nav-items{
+  overflow: visible;
+  }
+
+
+  .dropdownContent.show{
+  padding: 1.8rem 1.1rem;
+  margin-top: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,.12);
+  position:absolute;
+  max-height: 999px;
+
+  }
+
+  .features-dropdown{
+  left: -80px;;
+  }
+
+  .hero-image{
+  content: url("./images/image-hero-desktop.png");
+  }
+
+  .hero-section{
+  flex-direction: row;
+  width: 70%;
+  gap: 10%;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 2.5rem 0;
+  }
+
+  .hero-image{
+  flex: 0 0 50%;
+  max-width: 50%;
+  width: 500px;
+  }
+
+  .hero-text{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  padding-top: 5rem;
+  flex: 0 0 50%;
+  max-width: 50%;
+  }
+
+  .hero-text h1{
+  font-size: 4.5rem;
+  line-height: 1.2;
+  }
+
+  .hero-text p{
+  max-width: 378px;
+  }
+
+  .client-section{
+  margin-top: auto;
+  }
+
+
+}
+
+
+
+
+
