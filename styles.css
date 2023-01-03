@@ -47,8 +47,8 @@ transition: .3s ease-in-out all;
 
 
 .hamburger-container{
-position: fixed;
-left: calc(100vw - 70px);
+  position: absolute;
+left: calc(100vw - 58px);
 }
 .middle-nav-items.showNav{
 top: 0;

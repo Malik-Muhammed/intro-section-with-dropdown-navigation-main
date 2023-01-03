@@ -1,4 +1,5 @@
 const hamburgerIcon = document.querySelector("#hamburger-icon");
+const hamburgerContainer = document.querySelector(".hamburger-container");
 const navItems = document.querySelector(".middle-nav-items");
 const dropdownContainer = document.querySelectorAll(".dropdownContainer");
 const dropdownContainerArray = [...dropdownContainer];
@@ -9,12 +10,14 @@ const rightNavItems = document.querySelector(".right-nav-items");
 hamburgerIcon.addEventListener("click", ()=>{
     if(!navItems.classList.contains("showNav")){
         navItems.classList.add("showNav")
-        hamburgerIcon.src = "./images/icon-close-menu.svg"
+        hamburgerIcon.src = "./images/icon-close-menu.svg";
+        hamburgerContainer.style.position="fixed"
     }
 
     else{
         navItems.classList.remove("showNav")
         hamburgerIcon.src = "./images/icon-menu.svg";
+        hamburgerContainer.style.position = "absolute";
         
     }
 })
