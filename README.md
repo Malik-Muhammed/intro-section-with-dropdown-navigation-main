@@ -34,8 +34,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/Malik-Muhammed/intro-section-with-dropdown-navigation-main)
+- Live Site URL: [Add live site URL here](https://malik-muhammed.github.io/intro-section-with-dropdown-navigation-main/)
 
 ## My process
 Firstly, I did the structuring of the webpage.
