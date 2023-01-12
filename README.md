@@ -66,7 +66,7 @@ I still need to sharpen my knowledge of CSS layout and keep work on my understan
 
 ## Author
 
-- Frontend Mentor - [@@Malik-Muhammed](https://www.frontendmentor.io/profile/Malik-Muhammed)
+- Frontend Mentor - [@Malik-Muhammed](https://www.frontendmentor.io/profile/Malik-Muhammed)
 - Twitter - [@maliqlanre](https://twitter.com/maliqlanre)
 
 
